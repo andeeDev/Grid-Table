@@ -1,28 +1,31 @@
 .row {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(40px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
     grid-template-rows: 1fr 1fr 1fr;
-    //grid-template-columns: 1fr 1fr 1fr;
     background-color: #fafafa;
 }
 .fio {
     grid-column-start: 1;
     grid-column-end: 4;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #ececec;
     text-align: center;
     font-size: 16px;
 }
 .mark {
-    //min-width: 40px;
-    //max-width: 50px;
     width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     box-sizing: border-box;
     flex-basis: 40px;
     flex-grow: 1;
     text-align: center;
     position: relative;
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 14px;
     border: 1px solid #ececec;
 }
 .mark:before {
@@ -45,7 +48,87 @@
     border: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
+
+     .date-row .row .mark {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .mark:before {
+        display: none;
+    }
+    .row {
+        display: flex;
+        align-items: stretch;
+
+    }
+    .in {
+        width: 20px;
+    }
+    .fio {
+        position: sticky;
+        left: 0;
+        z-index: 100;
+        position: -webkit-sticky;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .date-row .fio {
+        z-index: 102;
+    }
+    .mark {
+        display: inline;
+        text-align: center;
+        vertical-align: center;
+        width: 40px;
+        height: auto;
+        padding-top: 0;
+        flex-basis: 30px;
+        line-height: 30px;
+    }
+
+    .table {
+        width: 600px;
+        height: 200px;
+        overflow: scroll;
+    }
+    .table-row {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+
+    .tbody {
+
+
+    }
+    .date-row {
+
+    }
+    .mark-d {
+        min-width: 50px;
+    }
+    .thead {
+        position: sticky;
+        top: 0;
+        z-index: 101;
+    }
+    .thead .mark-d {
+        min-width: 50px;
+    }
+
+
+
+
+
+
+
+}
+
+
+/*@media (min-width: 400px) {
     .row {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -69,4 +152,4 @@
     .row {
         grid-template-columns: repeat(6, 1fr);
     }
-}
+}*/
