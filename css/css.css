@@ -118,6 +118,14 @@ body {
         grid-template-columns: 300px 1fr;
         grid-template-rows: 35px;
     }
+    .table-row:hover .table-mark,
+    .table-row:hover .fio {
+        background-color: #eff0f7;
+    }
+    .table-row:focus-within .table-mark,
+    .table-row:focus-within .fio {
+        background-color: #eff0f7;
+    }
     .mark-d {
         min-width: 50px;
     }
