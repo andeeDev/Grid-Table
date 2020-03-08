@@ -108,9 +108,11 @@ body {
         border-width: 1px 0 0 1px;
     }
     .table {
-        /*width: ;*/
-        /*height: 200px*/;
+        /*
+        width: ;
+        height: 200px;
         overflow: scroll;
+        */
         margin-bottom: 0;
     }
     .table-row {
