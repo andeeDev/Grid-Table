@@ -68,6 +68,7 @@ body {
         flex-wrap: unset;
     }
     input[type='text'].in {
+        margin: 0;
         padding: 0;
         border: none;
         width: 100%;
@@ -108,9 +109,9 @@ body {
         border-width: 1px 0 0 1px;
     }
     .table {
-        /*width: ;*/
-        /*height: 200px*/;
-        overflow: scroll;
+        /*width: ;
+        height: 200px;
+        overflow: scroll;*/
         margin-bottom: 0;
     }
     .table-row {
@@ -122,9 +123,16 @@ body {
     .table-row:hover .fio {
         background-color: #eff0f7;
     }
+    .table-row:last-child .table-mark,
+    .table-row:last-child .fio {
+        border-bottom: 1px solid #ececec;
+    }
     .table-row:focus-within .table-mark,
     .table-row:focus-within .fio {
         background-color: #eff0f7;
+    }
+    .table-mark:last-child {
+        border-right: 1px solid #ececec;
     }
     .mark-d {
         min-width: 50px;

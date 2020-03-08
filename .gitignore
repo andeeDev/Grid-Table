@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.idea
+# dependencies
+grid-table/node_modules
+grid-table/.pnp
+grid-table/.pnp.js
+
+# testing
+grid-table/coverage
+
+# production
+grid-table/build
+
+# misc
+grid-table/.DS_Store
+grid-table/.env.local
+grid-table/.env.development.local
+.grid-table/env.test.local
+grid-table/.env.production.local
+
+grid-table/npm-debug.log*
+grid-table/yarn-debug.log*
+grid-table/yarn-error.log*
